@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+
+    Amount:
+    <input type="text" id="Amount">
+    From Currency:
+    <select>
+        <option>Việt Nam</option>
+        <option>Lào</option>
+        <option>Campuchia</option>
+    </select>
+    To  Currency:
+    <select>
+        <option>USD</option>
+        <option>Lào</option>
+        <option>Campuchia</option>
+    </select>
+    <button type="submit" onclick="showMoney()">Convert</button>
+
+<div id="result"></div>
+
+<script>
+    function showMoney() {
+        let area = document.getElementById("Amount").value;
+        let a = parseInt(area);
+        document.getElementById('result').innerHTML = ("Result: " +(a*22.5));
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -5,4 +5,4 @@
     - Dùng hàm prompt() nhập 2 số 
     - Thực Hành sử dụng toán tử
     - Biến, kiểu dữ liệu và toán tử
-    
+    - Ứng dụng chuyển đổi tiền tệ
