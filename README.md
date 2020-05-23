@@ -6,3 +6,4 @@
     - Thực Hành sử dụng toán tử
     - Biến, kiểu dữ liệu và toán tử
     - Ứng dụng chuyển đổi tiền tệ
+    - Ứng dụng máy tính

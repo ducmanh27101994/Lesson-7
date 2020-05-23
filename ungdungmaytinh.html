@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Máy Tính</title>
+</head>
+<body>
+
+<input type="text" id="sothunhat">
+<input type="text" id="sothuhai">
+</br>
+</br>
+<button type="submit" onclick="addition()">Addition(+)</button>
+<button type="submit" onclick="subtraction()">Subtraction(-)</button>
+<button type="submit" onclick="multiplication()">Multiplication(*)</button>
+<button type="submit" onclick="division()">Division(/)</button>
+
+<h3 id="ketqua"></h3>
+
+<script>
+    //phép tính cộng
+    function addition() {
+        let a1 = document.getElementById("sothunhat").value;
+        let b1 = document.getElementById("sothuhai").value;
+        let a = parseInt(a1);
+        let b = parseInt(b1);
+        document.getElementById("ketqua").innerHTML = ("Result addition: " +(a+b));
+    }
+    //phép tính trừ
+    function subtraction() {
+        let a1 = document.getElementById("sothunhat").value;
+        let b1 = document.getElementById("sothuhai").value;
+        let a = parseInt(a1);
+        let b = parseInt(b1);
+        document.getElementById("ketqua").innerHTML = ("Result subtraction: " +(a-b));
+    }
+    //phép tình nhân
+    function multiplication() {
+        let a1 = document.getElementById("sothunhat").value;
+        let b1 = document.getElementById("sothuhai").value;
+        let a = parseInt(a1);
+        let b = parseInt(b1);
+        document.getElementById("ketqua").innerHTML = ("Result multiplication: " +(a*b));
+    }
+    //phép tình chia
+    function division() {
+        let a1 = document.getElementById("sothunhat").value;
+        let b1 = document.getElementById("sothuhai").value;
+        let a = parseInt(a1);
+        let b = parseInt(b1);
+        document.getElementById("ketqua").innerHTML = ("Result division: " +(a/b));
+    }
+
+</script>
+</body>
+</html>
