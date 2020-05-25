@@ -7,29 +7,45 @@
 <body>
 
     Amount:
-    <input type="text" id="Amount">
+    <input type="text" id="amount">
     From Currency:
-    <select>
-        <option>Việt Nam</option>
-        <option>Lào</option>
-        <option>Campuchia</option>
+    <select id="from">
+        <option value="22500">Việt Nam</option>
+        <option value="1">Mỹ</option>
     </select>
     To  Currency:
-    <select>
-        <option>USD</option>
-        <option>Lào</option>
-        <option>Campuchia</option>
+    <select id="to">
+        <option value="1">USD</option>
+        <option value="22500">VNĐ</option>
     </select>
     <button type="submit" onclick="showMoney()">Convert</button>
 
 <div id="result"></div>
 
 <script>
-    function showMoney() {
-        let area = document.getElementById("Amount").value;
-        let a = parseInt(area);
-        document.getElementById('result').innerHTML = ("Result: " +(a*22.5));
-    }
+     function showMoney() {
+         let amount = document.getElementById("amount").value;
+         let from = document.getElementById('from').value;
+         let to = document.getElementById('to').value;
+
+
+         let result = (parseInt(amount) * parseInt(to))/parseInt(from);
+
+         document.getElementById('result').innerHTML = ('Result: ' +result);
+
+
+
+     }
+
+
+
+
+
+
+
+
+
+
 
 </script>
 
